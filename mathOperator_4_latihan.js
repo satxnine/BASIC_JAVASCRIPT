@@ -27,13 +27,11 @@ var i = 0;
 var j = 10;
 console.log(j);
 
-
 var k = 0;
 var l = 10;
 l--;
 l--;
 console.log(l);
-
 
 var m = 0;
 var n = 10;
@@ -41,9 +39,25 @@ var n = 10;
 --n;
 console.log(n);
 
-
 var o = 0;
 var p = 10;
 --p;
 --p;
 console.log(p);
+
+console.log('-----latihan-----')
+var w = 0;
+var z = 10;
+console.log(z);
+
+var x = 0;
+var y = 10;
+var x = (y += 5);
+console.log(x);
+console.log(y);
+
+var r = 0;
+var s = 20;
+var r = (s -= 5);
+console.log(y);
+
