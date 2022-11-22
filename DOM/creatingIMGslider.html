@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <style>
+        button {
+    margin-top:210px;
+    margin-left: 20px;
+    float:left;
+    height:50px;
+    padding: 15px  15px 15px 15px;
+}
+img {
+    float:left;
+    margin-top: 35px;
+    margin-right:10px;
+    margin-left:30px;
+}
+    </style>
+</head>
+<body>
+    <div>
+        <button onclick="prev()" class="btn btn-outline-dark"> Prev </button>
+        <img id="slider" src="1.jpeg" width="400px" height="400px"/>
+        <button onclick="next()" class="btn btn-outline-dark"> Next </button>
+    </div>
+
+    <script>
+    var images = [
+    '1.jpeg', 
+    '2.jpeg', 
+    '3.jpeg'
+];
+var num = 0;
+function next() {
+    var slider = document.getElementById('slider');
+    num++;
+    if(num >= images.length) {
+        num = 0;
+    }
+    slider.src = images[num];
+}
+function prev() {
+    var slider = document.getElementById('slider');
+    num--;
+    if(num < 0) {
+        num = images.length-1;
+    }
+    slider.src = images[num];
+}
+    </script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    
+</body>
+</html>

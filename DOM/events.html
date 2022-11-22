@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<style>
+    button{
+
+        padding: 15px 15px 15px 15px;
+        font-size: 12px;
+        font-style: italic;
+    }
+
+    input{
+        width: 320px;
+        padding: 10px;
+        border-radius: 35px;
+
+    }
+</style>
+</head>
+<body>
+
+    <button onclick="show();" class="btn btn-outline-dark">Click Me</button>
+    <button id="demo" class="btn btn-outline-dark">Date</button>
+    <hr>
+    <hr>
+    <input type="text" onchange="change()" id="name floatingInput"  onchange="change()" placeholder="masukkan teks">
+    <hr>
+    <hr>
+    <button id="dude" class="btn btn-outline-dark">Start</button>
+    
+    <script>
+function show(){
+    alert("hi daa")
+}
+
+       
+
+function change(){
+    var x = document.getElementById('name floatingInput')
+    x.value = x.value.toUpperCase();
+}
+
+            window.onload = function() {
+    var x = document.getElementById('demo');
+    x.onclick = function () {
+        document.body.innerHTML = Date();
+    }
+
+    var btn = document.getElementById("dude");
+    btn.addEventListener("click", myFunction);
+
+    function myFunction() {
+        alert(Math.random());
+        btn.removeEventListener("click", myFunction);
+    }
+};
+    </script>
+        <script src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>

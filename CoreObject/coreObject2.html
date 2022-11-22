@@ -1,0 +1,122 @@
+    <script>
+        //leasson 37
+        /*
+        var courses = new Array ('Menjahit', 'Berenang', 'Memasak')
+        courses[1] = 'Menyanyi'
+        document. write(courses[1])
+        
+
+        //leasson 38
+        
+        var courses = new Array()
+        courses[0] = 'Menjahit'
+        courses[1] = 'Berenang'
+        courses[2] = 'Memasak'
+        courses[3] = 'Menyanyi'
+        courses[4] = 'Bermain'
+        document.write(courses[2])
+        
+       //leasson 39
+        var courses = ['Menjahit', 'Berenang', 'Memanah']
+        var menu = ['Mie Ayam', 'Bakso', 'Nasgor']
+        var concatArray = courses.concat(menu)
+        document.write(concatArray)
+        
+
+        var person = {
+        name : 'Ridaa ',
+        age : 17,
+        }
+        var person2 = []
+        var a = person['name'] = ' Ridaa '
+        var b = person['age'] = '17'
+
+            
+        document.write(a) 
+        document.write(b) 
+        document.write(person['name']) 
+        document.write(person['age']) 
+        
+
+        //leasson 41
+        document.write(Math.PI)
+        document.write(Math.sqrt(4))
+        
+        var random = Math.ceil(Math.random() *10)
+        document.write(random)
+        
+
+        function main() {
+    var year = 2005
+
+    document.write(calcCent(year));
+        
+    }
+    function calcCent(y){
+        return Math.ceil(y/100)
+    }
+    main()
+
+
+    var n = prompt('masukan bilangan : ' , ' ')
+    var answer = Math.sqrt(n)
+    alert('ini nilai dari akar kuadrat bilangan '+n+' adalah ' +answer)
+
+
+    var r = prompt('Jari-jari :' , ' ')
+    var t = prompt('Masukan nilai tinggi :' , ' ')
+    var answer = (Math.PI * (Math.pow(r,2) * t))
+    alert ('jari-jari '+r+' tinggi '+t+' volume tabung = ' +Math.ceil(answer) +answer)
+
+    //leasson 42
+    function myAlert() {
+    alert("Hi kidded");
+    }
+    setInterval(myAlert, 1000);
+
+function printTime() {
+    var d = new Date();
+    var hours = d.getHours();
+    var mins = d.getMinutes();
+    var secs = d.getSeconds();
+    document.body.innerHTML =  hours+":"+mins+":"+secs;
+}
+setInterval(printTime, 1000);
+
+
+function main() {
+   var year = 1969;
+   var month = 10;
+   var day = 29;
+    
+   document.write(getWeekDay(year, month, day)); 
+}*/
+
+function getWeekDay(year, month, day) {
+   var names = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+   var date = new Date(year, month, day);
+   var day = date.getDay()
+   return names[day]
+    
+}
+main()
+
+
+/*function birthOfCanal(year, month, day){
+    var namaHari = ['minggu','senin','selasa','rabu','kamis','jumat','sabtu']
+    var d = new Date(year, month, day)
+    var day = d.getDay();
+    return namaHari[day];
+}
+var y = prompt('masukan tahun lahir kamu')
+var m = prompt('masukan bulan lahir kamu')
+var d = prompt('masukan tanggal lahir kamu')
+var dDay = birthOfCanal(y,(m-1),d)
+console.log(dDay)
+alert('hari lahir kamu adalah hari '+dDay)
+*/
+
+
+
+
+    </script>
